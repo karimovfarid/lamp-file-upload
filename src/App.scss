@@ -1,0 +1,11 @@
+@import 'core/styles/variables.scss';
+
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.panel{
+    background: $color-blue;
+    padding: $base-10;
+}

@@ -1,0 +1,12 @@
+@mixin alignItemsCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin dragTextDetails($color, $font-size, $margin-top) {
+  color: $color;
+  font-size: $font-size;
+  margin-top: $margin-top;
+  text-align: center;
+}

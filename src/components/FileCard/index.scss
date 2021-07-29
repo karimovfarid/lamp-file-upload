@@ -1,0 +1,35 @@
+@import '../../core/styles/variables.scss';
+@import '../../core/styles/mixin.scss';
+
+.divider {
+  height: $base/4;
+  background: $color-blue-100;
+}
+
+.file-card {
+  margin: 0 auto;
+  width: 400px;
+  height: 590px;
+  background: $color-blue-50;
+  border: $border-base-width solid $color-blue-100;
+  box-sizing: border-box;
+
+  &-header {
+    padding: $base-5;
+
+    &__title {
+      font-weight: $font-weight-bold;
+      font-size: $font-size-xl;
+    }
+
+    &__helper {
+      font-size: $font-size-xs;
+      color: $color-blue-700;
+    }
+  }
+
+  &-body {
+    height: calc(100% - 120px);
+    padding: $base-5;
+  }
+}

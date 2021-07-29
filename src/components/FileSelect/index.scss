@@ -1,0 +1,44 @@
+@import '../../core/styles/variables.scss';
+@import '../../core/styles/mixin.scss';
+
+.file-select {
+  height: 100%;
+  @include alignItemsCenter();
+
+  &__over-bg {
+    background: $color-blue;
+    border: $border-base-width dashed $color-blue-500;
+    box-sizing: border-box;
+  }
+
+  input[type='file'] {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &__drag {
+    @include dragTextDetails(#000, $font-size-xs, $base-2)
+  }
+
+  &__or {
+    @include dragTextDetails($color-blue-700, $font-size-xs, $base-2)
+  }
+
+  &__upload {
+    @include dragTextDetails($color-blue-500, $font-size-xs, $base-2)
+  }
+
+  &__progress {
+    width: $base-10*2;
+    height: $base-10*2;
+    margin: 0 auto;
+    border: $border-base-width solid $color-blue-200;
+    border-radius: 100%;
+    overflow: hidden;
+    @include alignItemsCenter();
+  }
+}
